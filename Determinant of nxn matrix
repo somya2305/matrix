@@ -48,6 +48,13 @@ int main()
         cin >> a[i][j];
         v.push_back(a[i][j]);
     }
-    cout<<"Determinant of th given matrix is :"<<f(v,n);
+    cout<<"\nGiven matrix is:\n";
+    for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+                cout<<a[i][j]<<" ";
+            cout<<endl;
+        }
+    cout<<"\nDeterminant of th given matrix is :"<<f(v,n)<<endl;
     return 0;
 }
